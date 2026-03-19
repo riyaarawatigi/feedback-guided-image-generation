@@ -32,9 +32,6 @@ Show that feedback-guided refinement achieves better object recall with fewer to
 pip install -r requirements.txt
 ```
 
-## Status
-🚧 Work in progress - Week 1 implementation
-
 ## Models
 - Generator: Stable Diffusion 2.1
 - Detector: YOLOv8
