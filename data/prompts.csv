@@ -1,1 +1,31 @@
-
+prompt_id,prompt_text,num_objects,object_list,complexity
+1,a person and a dog,2,person|dog,simple
+2,a cat sitting on a chair,2,cat|chair,simple
+3,a bicycle next to a car,2,bicycle|car,simple
+4,a laptop and a cup of coffee,2,laptop|cup,simple
+5,a book on a dining table,2,book|dining table,simple
+6,a bird and a vase,2,bird|vase,simple
+7,a backpack and an umbrella,2,backpack|umbrella,simple
+8,a couch with a teddy bear,2,couch|teddy bear,simple
+9,a bottle and a bowl,2,bottle|bowl,simple
+10,a horse and a motorcycle,2,horse|motorcycle,simple
+11,a person walking a dog with a backpack,3,person|dog|backpack,medium
+12,a cat a laptop and a mouse on a desk,3,cat|laptop|mouse,medium
+13,a bicycle a car and a bus,3,bicycle|car|bus,medium
+14,a cup a spoon and a bowl on a table,3,cup|spoon|bowl,medium
+15,a book a clock and a cell phone,3,book|clock|cell phone,medium
+16,a chair a couch and a dining table,3,chair|couch|dining table,medium
+17,a dog a cat and a bird,3,dog|cat|bird,medium
+18,an apple a banana and an orange,3,apple|banana|orange,medium
+19,a person on a bicycle with an umbrella,3,person|bicycle|umbrella,medium
+20,a truck a car and a motorcycle on a road,3,truck|car|motorcycle,medium
+21,a person sitting on a couch with a laptop and a cup,4,person|couch|laptop|cup,hard
+22,a dog a cat a bird and a bowl,4,dog|cat|bird|bowl,hard
+23,a dining table with a fork a knife a spoon and a bottle,4,dining table|fork|knife|spoon,hard
+24,a bedroom with a bed a chair a clock and a book,4,bed|chair|clock|book,hard
+25,a bicycle a backpack an umbrella and a handbag,4,bicycle|backpack|umbrella|handbag,hard
+26,a laptop a mouse a keyboard and a cell phone on a desk,4,laptop|mouse|keyboard|cell phone,hard
+27,a car a bus a truck and a motorcycle in a parking lot,4,car|bus|truck|motorcycle,hard
+28,an apple a banana an orange and a sandwich,4,apple|banana|orange|sandwich,hard
+29,a person with a dog a cat and a suitcase,4,person|dog|cat|suitcase,hard
+30,a couch a vase a clock and a teddy bear in a living room,4,couch|vase|clock|teddy bear,hard
