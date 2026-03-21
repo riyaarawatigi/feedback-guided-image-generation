@@ -1,5 +1,5 @@
 generation:
-  model: "stabilityai/stable-diffusion-2-1"
+  model: "runwayml/stable-diffusion-v1-5"
   image_size: 512
   steps: 50
   guidance: 7.5
@@ -17,3 +17,45 @@ paths:
   prompts: "data/prompts.csv"
   images: "generated_images/"
   results: "results/"
+```
+
+---
+
+# FILE 6: `.gitignore`
+```
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Large files
+generated_images/
+*.png
+*.jpg
+*.jpeg
+
+# Model files
+*.pt
+*.pth
+*.safetensors
+*.bin
+*.ckpt
+
+# Results
+results/
+*.csv
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# System
+.DS_Store
+Thumbs.db
+
+# Hugging Face
+.cache/
