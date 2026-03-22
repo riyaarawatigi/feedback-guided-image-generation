@@ -1,0 +1,31 @@
+prompt_id,prompt_text,method,image_path,num_generated
+1,a person and a dog,vanilla,generated_images/vanilla/prompt_001.png,1
+2,a cat sitting on a chair,vanilla,generated_images/vanilla/prompt_002.png,1
+3,a bicycle next to a car,vanilla,generated_images/vanilla/prompt_003.png,1
+4,a laptop and a cup of coffee,vanilla,generated_images/vanilla/prompt_004.png,1
+5,a book on a dining table,vanilla,generated_images/vanilla/prompt_005.png,1
+6,a bird and a vase,vanilla,generated_images/vanilla/prompt_006.png,1
+7,a backpack and an umbrella,vanilla,generated_images/vanilla/prompt_007.png,1
+8,a couch with a teddy bear,vanilla,generated_images/vanilla/prompt_008.png,1
+9,a bottle and a bowl,vanilla,generated_images/vanilla/prompt_009.png,1
+10,a horse and a motorcycle,vanilla,generated_images/vanilla/prompt_010.png,1
+11,a person walking a dog with a backpack,vanilla,generated_images/vanilla/prompt_011.png,1
+12,a cat a laptop and a mouse on a desk,vanilla,generated_images/vanilla/prompt_012.png,1
+13,a bicycle a car and a bus,vanilla,generated_images/vanilla/prompt_013.png,1
+14,a cup a spoon and a bowl on a table,vanilla,generated_images/vanilla/prompt_014.png,1
+15,a book a clock and a cell phone,vanilla,generated_images/vanilla/prompt_015.png,1
+16,a chair a couch and a dining table,vanilla,generated_images/vanilla/prompt_016.png,1
+17,a dog a cat and a bird,vanilla,generated_images/vanilla/prompt_017.png,1
+18,an apple a banana and an orange,vanilla,generated_images/vanilla/prompt_018.png,1
+19,a person on a bicycle with an umbrella,vanilla,generated_images/vanilla/prompt_019.png,1
+20,a truck a car and a motorcycle on a road,vanilla,generated_images/vanilla/prompt_020.png,1
+21,a person sitting on a couch with a laptop and a cup,vanilla,generated_images/vanilla/prompt_021.png,1
+22,a dog a cat a bird and a bowl,vanilla,generated_images/vanilla/prompt_022.png,1
+23,a dining table with a fork a knife a spoon and a bottle,vanilla,generated_images/vanilla/prompt_023.png,1
+24,a bedroom with a bed a chair a clock and a book,vanilla,generated_images/vanilla/prompt_024.png,1
+25,a bicycle a backpack an umbrella and a handbag,vanilla,generated_images/vanilla/prompt_025.png,1
+26,a laptop a mouse a keyboard and a cell phone on a desk,vanilla,generated_images/vanilla/prompt_026.png,1
+27,a car a bus a truck and a motorcycle in a parking lot,vanilla,generated_images/vanilla/prompt_027.png,1
+28,an apple a banana an orange and a sandwich,vanilla,generated_images/vanilla/prompt_028.png,1
+29,a person with a dog a cat and a suitcase,vanilla,generated_images/vanilla/prompt_029.png,1
+30,a couch a vase a clock and a teddy bear in a living room,vanilla,generated_images/vanilla/prompt_030.png,1
