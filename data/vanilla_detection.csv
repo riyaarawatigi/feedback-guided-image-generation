@@ -1,0 +1,31 @@
+prompt_id,requested_objects,detected_objects,missing_objects,recall_score
+1,person|dog,person|dog,,1.0
+2,cat|chair,cat,chair,0.5
+3,bicycle|car,bicycle,car,0.5
+4,laptop|cup,cup|person|dining table,laptop,0.5
+5,book|dining table,book|vase|dining table|potted plant|chair,,1.0
+6,bird|vase,bird|vase,,1.0
+7,backpack|umbrella,umbrella,backpack,0.5
+8,couch|teddy bear,teddy bear|couch|potted plant|vase,,1.0
+9,bottle|bowl,bottle,bowl,0.5
+10,horse|motorcycle,horse|motorcycle,,1.0
+11,person|dog|backpack,person|dog|suitcase,backpack,0.6667
+12,cat|laptop|mouse,cat|laptop,mouse,0.6667
+13,bicycle|car|bus,person|bicycle|truck|car,bus,0.6667
+14,cup|spoon|bowl,spoon|cup|bowl|fork|dining table,,1.0
+15,book|clock|cell phone,clock,book|cell phone,0.3333
+16,chair|couch|dining table,chair|vase|potted plant|dining table,couch,0.6667
+17,dog|cat|bird,cat|dog,bird,0.6667
+18,apple|banana|orange,apple,banana|orange,0.3333
+19,person|bicycle|umbrella,umbrella|person|bicycle,,1.0
+20,truck|car|motorcycle,truck|car,motorcycle,0.6667
+21,person|couch|laptop|cup,person|laptop|chair|couch,cup,0.75
+22,dog|cat|bird|bowl,cat|dog|bowl,bird,0.75
+23,dining table|fork|knife|spoon,fork|dining table,knife|spoon,0.5
+24,bed|chair|clock|book,clock|bed|potted plant|book,chair,0.75
+25,bicycle|backpack|umbrella|handbag,bicycle|umbrella|person|backpack,handbag,0.75
+26,laptop|mouse|keyboard|cell phone,laptop|mouse,keyboard|cell phone,0.5
+27,car|bus|truck|motorcycle,bus|motorcycle|truck,car,0.75
+28,apple|banana|orange|sandwich,apple|banana|dining table,orange|sandwich,0.5
+29,person|dog|cat|suitcase,dog|person|suitcase,cat,0.75
+30,couch|vase|clock|teddy bear,teddy bear|couch|bed,vase|clock,0.5
