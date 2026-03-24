@@ -1,10 +1,9 @@
-
 import os
 import re
+from functools import lru_cache
+
 import pandas as pd
 from ultralytics import YOLO
-
-model = YOLO("yolov8l.pt")
 
 def normalize_object_name(name):
     name = str(name).lower().strip()
@@ -22,7 +21,12 @@ def extract_prompt_id(filename):
         return int(match.group(1))
     return None
 
-def detect_objects(image_path, conf_threshold=0.25):
+@lru_cache(maxsize=4)
+def get_model(model_name="yolov8n.pt"):
+    return YOLO(model_name)
+
+def detect_objects(image_path, conf_threshold=0.25, model_name="yolov8n.pt"):
+    model = get_model(model_name)
     results = model(image_path, conf=conf_threshold, verbose=False)
 
     detected_objects = []
@@ -54,7 +58,13 @@ def compare_objects(requested_objects, detected_objects):
         "recall_score": round(recall, 4)
     }
 
-def analyze_single_image(image_filename, image_folder, prompts_df, conf_threshold=0.25):
+def analyze_single_image(
+    image_filename,
+    image_folder,
+    prompts_df,
+    conf_threshold=0.25,
+    model_name="yolov8n.pt",
+):
     image_path = os.path.join(image_folder, image_filename)
     prompt_id = extract_prompt_id(image_filename)
 
@@ -68,7 +78,11 @@ def analyze_single_image(image_filename, image_folder, prompts_df, conf_threshol
 
     row = matched_rows.iloc[0]
     requested_objects = parse_object_list(row["object_list"])
-    detected_objects = detect_objects(image_path, conf_threshold=conf_threshold)
+    detected_objects = detect_objects(
+        image_path,
+        conf_threshold=conf_threshold,
+        model_name=model_name,
+    )
     comparison = compare_objects(requested_objects, detected_objects)
 
     return {

@@ -3,6 +3,9 @@ generation:
   image_size: 512
   steps: 50
   guidance: 7.5
+  device: "auto"
+  dtype: "auto"
+  seed: 42
 
 detection:
   model: "yolov8n.pt"

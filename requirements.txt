@@ -1,0 +1,11 @@
+accelerate
+diffusers
+matplotlib
+pandas
+Pillow
+PyYAML
+seaborn
+torch
+tqdm
+transformers
+ultralytics
