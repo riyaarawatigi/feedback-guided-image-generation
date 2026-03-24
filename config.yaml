@@ -8,7 +8,7 @@ generation:
   seed: 42
 
 detection:
-  model: "yolov8n.pt"
+  model: "yolov8l.pt"
   confidence: 0.25
 
 experiments:
