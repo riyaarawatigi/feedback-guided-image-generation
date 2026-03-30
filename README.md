@@ -1,55 +1,100 @@
-# Feedback-Guided Rejection Sampling
+# Object Omission Mitigation for Text-to-Image Generation
 
-Course project investigating iterative prompt refinement for reducing object omission in text-to-image diffusion models.
+Implementation of detection-guided feedback refinement for improving compositional image generation with Stable Diffusion.
 
-## Team
-- Riya - Image Generation
-- Pranjaly - Object Detection
-- Rumeysa - Feedback Loop
+## Overview
 
-## What We're Building
+Text-to-image models often fail to generate all requested objects in multi-object prompts. This project uses YOLOv8 object detection to identify missing objects and iteratively refines prompts until all objects appear.
 
-A system that automatically detects when AI image generators miss objects and refines prompts to fix the problem.
+**Results:**
+- 83.3% success rate (vs 23.3% baseline, 46.7% rejection sampling)
+- 1.78× improvement with 15% fewer generations
+- Works without model retraining
 
-**Example:**
-- Prompt: "a cat, a dog, and a bird"
-- Generated: Only cat and dog (bird missing)
-- System detects: "bird is missing"
-- Refined prompt: "a cat, a dog, and especially a bird"
-- Regenerate: Now all three objects present ✓
+## Installation
 
-## Methods
-1. Vanilla (1 generation)
-2. Structured prompts (1 generation)
-3. Rejection sampling (5 or 10 generations)
-4. Feedback-guided (our method, ~4 generations)
-
-## Goal
-Show that feedback-guided refinement achieves better object recall with fewer total generations than blind rejection sampling.
-
-## Setup
 ```bash
+git clone https://github.com/YOUR_USERNAME/object-omission-mitigation.git
+cd object-omission-mitigation
 pip install -r requirements.txt
 ```
 
-## Run Experiments
+## Quick Start
+
 ```bash
-python scripts/baseline_vanilla.py --limit 3
-python scripts/baseline_structured.py --limit 3
-python scripts/baseline_rejection.py --limit 3
-python scripts/feedback_method.py --limit 3
-python scripts/analyzer.py
-python analysis/create_tables.py
+python generate.py --prompt "a bicycle next to a car"
 ```
 
-The `--limit` flag is useful for smoke tests before running the full 30-prompt experiment.
+## Usage
 
-## Outputs
-- Generated images are saved under `generated_images/<method>/`
-- Result CSVs are saved under `results/`
-- Summary tables are saved under `results/tables/`
+### Single Image Generation
+```bash
+python generate.py --prompt "your prompt here" --max_attempts 9
+```
 
-## Models
-- Generator: Stable Diffusion 2.1
-- Detector: YOLOv8
-- Dataset: 30 multi-object prompts (COCO objects only)
+### Compare Methods
+```bash
+python run_comparison.py --prompt "a bicycle next to a car"
+```
+
+### Reproduce Paper Results
+```bash
+python experiments/run_all_experiments.py
+```
+
+## Requirements
+
+- Python 3.8+
+- CUDA-capable GPU (16GB+ recommended)
+- See `requirements.txt` for full dependencies
+
+## Project Structure
+
+```
+├── generate.py              # Single image generation
+├── run_comparison.py        # Compare all methods
+├── src/
+│   ├── feedback_refinement.py
+│   ├── detection.py
+│   └── baselines.py
+├── experiments/
+│   ├── run_all_experiments.py
+│   └── prompts.json
+└── visualizations/
+    └── plot_results.py
+```
+
+## Results
+
+| Method | Success Rate | Avg Generations |
+|--------|:------------:|:---------------:|
+| Vanilla | 23.3% | 1.00 |
+| Rejection k=5 | 46.7% | 5.00 |
+| **Feedback (Ours)** | **83.3%** | **4.23** |
+
+## Citation
+
+```bibtex
+@article{paul2024object,
+  title={Object Omission Mitigation for Compositional Image Generation via Detection-Guided Refinement},
+  author={Paul, Pranjaly and Savran, Rumeysa and Arawatagi, Riya},
+  year={2024}
+}
+```
+
+## License
+
+MIT License - see LICENSE file
+
+## Authors
+
+- Pranjaly Paul - pranjaly.paul@utn.de
+- Rumeysa Savran - rumeysa.savran@utn.de  
+- Riya Arawatagi - riya.arawatagi@utn.de
+
+Technische Universität Nürnberg
+
+## Acknowledgments
+
+Course project for Multimodal Foundation Models. Built using Stable Diffusion, Diffusers, and YOLOv8.
+
