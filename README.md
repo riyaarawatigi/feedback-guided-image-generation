@@ -14,7 +14,7 @@ Text-to-image models often fail to generate all requested objects in multi-objec
 ## Installation
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/object-omission-mitigation.git
+git clone https://github.com/riyaarawatigi/feedback-guided-image-generation.git
 cd object-omission-mitigation
 pip install -r requirements.txt
 ```
