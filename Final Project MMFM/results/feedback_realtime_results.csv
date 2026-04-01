@@ -1,0 +1,128 @@
+prompt_id,attempt,recall,success,current_prompt
+1,1,1.0,True,a person and a dog
+2,1,1.0,True,a cat sitting on a chair
+3,1,0.5,False,a bicycle next to a car
+3,2,1.0,True,a bicycle next to a car. Make sure to clearly include the car.
+4,1,1.0,True,a laptop and a cup of coffee
+5,1,1.0,True,a book on a dining table
+6,1,1.0,True,a bird and a vase
+7,1,0.5,False,a backpack and an umbrella
+7,2,1.0,True,a backpack and an umbrella. Make sure to clearly include the backpack.
+8,1,0.5,False,a couch with a teddy bear
+8,2,1.0,True,a couch with a teddy bear. Make sure to clearly include the couch.
+9,1,1.0,True,a bottle and a bowl
+10,1,1.0,True,a horse and a motorcycle
+11,1,0.6667,False,a person walking a dog with a backpack
+11,2,1.0,True,a person walking a dog with a backpack. Make sure to clearly include the backpack.
+12,1,0.6667,False,a cat a laptop and a mouse on a desk
+12,2,0.3333,False,a cat a laptop and a mouse on a desk. Make sure to clearly include the mouse.
+12,3,1.0,True,"a cat a laptop and a mouse on a desk. Make sure to clearly include the laptop, mouse."
+13,1,0.6667,False,a bicycle a car and a bus
+13,2,0.6667,False,a bicycle a car and a bus. Make sure to clearly include the car.
+13,3,0.3333,False,a bicycle a car and a bus. Make sure to clearly include the bicycle.
+13,4,0.6667,False,"a bicycle a car and a bus. Make sure to clearly include the car, bus."
+13,5,0.6667,False,a bicycle a car and a bus. Make sure to clearly include the bicycle.
+13,6,0.6667,False,a bicycle a car and a bus. Make sure to clearly include the car.
+13,7,0.6667,False,a bicycle a car and a bus. Make sure to clearly include the bicycle.
+13,8,0.6667,False,a bicycle a car and a bus. Make sure to clearly include the car.
+13,9,0.3333,False,a bicycle a car and a bus. Make sure to clearly include the bicycle.
+14,1,0.3333,False,a cup a spoon and a bowl on a table
+14,2,0.6667,False,"a cup a spoon and a bowl on a table. Make sure to clearly include the cup, bowl."
+14,3,0.3333,False,a cup a spoon and a bowl on a table. Make sure to clearly include the bowl.
+14,4,1.0,True,"a cup a spoon and a bowl on a table. Make sure to clearly include the cup, spoon."
+15,1,0.6667,False,a book a clock and a cell phone
+15,2,0.6667,False,a book a clock and a cell phone. Make sure to clearly include the clock.
+15,3,1.0,True,a book a clock and a cell phone. Make sure to clearly include the cell phone.
+16,1,0.6667,False,a chair a couch and a dining table
+16,2,0.3333,False,a chair a couch and a dining table. Make sure to clearly include the couch.
+16,3,0.6667,False,"a chair a couch and a dining table. Make sure to clearly include the chair, dining table."
+16,4,0.6667,False,a chair a couch and a dining table. Make sure to clearly include the couch.
+16,5,1.0,True,a chair a couch and a dining table. Make sure to clearly include the chair.
+17,1,0.3333,False,a dog a cat and a bird
+17,2,0.6667,False,"a dog a cat and a bird. Make sure to clearly include the dog, bird."
+17,3,0.6667,False,a dog a cat and a bird. Make sure to clearly include the dog.
+17,4,0.0,False,a dog a cat and a bird. Make sure to clearly include the bird.
+17,5,1.0,True,"a dog a cat and a bird. Make sure to clearly include the dog, cat, bird."
+18,1,0.3333,False,an apple a banana and an orange
+18,2,0.3333,False,"an apple a banana and an orange. Make sure to clearly include the banana, orange."
+18,3,0.3333,False,"an apple a banana and an orange. Make sure to clearly include the banana, orange."
+18,4,1.0,True,"an apple a banana and an orange. Make sure to clearly include the apple, orange."
+19,1,1.0,True,a person on a bicycle with an umbrella
+20,1,0.3333,False,a truck a car and a motorcycle on a road
+20,2,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the truck, motorcycle."
+20,3,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the car, motorcycle."
+20,4,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the truck, motorcycle."
+20,5,0.6667,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the car, motorcycle."
+20,6,0.3333,False,a truck a car and a motorcycle on a road. Make sure to clearly include the car.
+20,7,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the truck, motorcycle."
+20,8,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the car, motorcycle."
+20,9,0.3333,False,"a truck a car and a motorcycle on a road. Make sure to clearly include the car, motorcycle."
+21,1,1.0,True,a person sitting on a couch with a laptop and a cup
+22,1,0.25,False,a dog a cat a bird and a bowl
+22,2,0.5,False,"a dog a cat a bird and a bowl. Make sure to clearly include the dog, bird, bowl."
+22,3,0.5,False,"a dog a cat a bird and a bowl. Make sure to clearly include the dog, bird."
+22,4,0.5,False,"a dog a cat a bird and a bowl. Make sure to clearly include the cat, bird."
+22,5,0.75,False,"a dog a cat a bird and a bowl. Make sure to clearly include the dog, bird."
+22,6,0.5,False,a dog a cat a bird and a bowl. Make sure to clearly include the bird.
+22,7,0.25,False,"a dog a cat a bird and a bowl. Make sure to clearly include the cat, bird."
+22,8,0.25,False,"a dog a cat a bird and a bowl. Make sure to clearly include the dog, bird, bowl."
+22,9,0.0,False,"a dog a cat a bird and a bowl. Make sure to clearly include the dog, bird, bowl."
+23,1,0.5,False,a dining table with a fork a knife a spoon and a bottle
+23,2,0.5,False,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the fork, spoon."
+23,3,0.5,False,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the knife, spoon."
+23,4,0.75,False,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the dining table, spoon."
+23,5,0.5,False,a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the knife.
+23,6,0.5,False,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the dining table, spoon."
+23,7,0.5,False,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the knife, spoon."
+23,8,1.0,True,"a dining table with a fork a knife a spoon and a bottle. Make sure to clearly include the dining table, fork."
+24,1,0.5,False,a bedroom with a bed a chair a clock and a book
+24,2,0.75,False,"a bedroom with a bed a chair a clock and a book. Make sure to clearly include the clock, book."
+24,3,0.5,False,a bedroom with a bed a chair a clock and a book. Make sure to clearly include the book.
+24,4,0.75,False,"a bedroom with a bed a chair a clock and a book. Make sure to clearly include the chair, book."
+24,5,0.5,False,a bedroom with a bed a chair a clock and a book. Make sure to clearly include the book.
+24,6,0.75,False,"a bedroom with a bed a chair a clock and a book. Make sure to clearly include the chair, clock."
+24,7,1.0,True,a bedroom with a bed a chair a clock and a book. Make sure to clearly include the book.
+25,1,0.75,False,a bicycle a backpack an umbrella and a handbag
+25,2,0.75,False,a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack.
+25,3,0.5,False,a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the handbag.
+25,4,0.5,False,"a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack, handbag."
+25,5,0.75,False,"a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack, handbag."
+25,6,0.5,False,a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the handbag.
+25,7,0.75,False,"a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack, umbrella."
+25,8,0.5,False,a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack.
+25,9,1.0,True,"a bicycle a backpack an umbrella and a handbag. Make sure to clearly include the backpack, umbrella."
+26,1,0.5,False,a laptop a mouse a keyboard and a cell phone on a desk
+26,2,0.75,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the laptop, cell phone."
+26,3,0.0,False,a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the cell phone.
+26,4,0.5,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the laptop, mouse, keyboard, cell phone."
+26,5,0.25,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the laptop, cell phone."
+26,6,0.75,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the laptop, mouse, keyboard."
+26,7,0.5,False,a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the cell phone.
+26,8,0.5,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the mouse, cell phone."
+26,9,0.5,False,"a laptop a mouse a keyboard and a cell phone on a desk. Make sure to clearly include the laptop, cell phone."
+27,1,0.75,False,a car a bus a truck and a motorcycle in a parking lot
+27,2,0.5,False,a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the truck.
+27,3,0.5,False,"a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the car, motorcycle."
+27,4,0.75,False,"a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the car, motorcycle."
+27,5,0.5,False,a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the motorcycle.
+27,6,0.75,False,"a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the truck, motorcycle."
+27,7,0.75,False,a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the truck.
+27,8,0.75,False,a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the motorcycle.
+27,9,0.75,False,a car a bus a truck and a motorcycle in a parking lot. Make sure to clearly include the truck.
+28,1,0.75,False,an apple a banana an orange and a sandwich
+28,2,0.75,False,an apple a banana an orange and a sandwich. Make sure to clearly include the sandwich.
+28,3,0.75,False,an apple a banana an orange and a sandwich. Make sure to clearly include the banana.
+28,4,0.75,False,an apple a banana an orange and a sandwich. Make sure to clearly include the sandwich.
+28,5,0.25,False,an apple a banana an orange and a sandwich. Make sure to clearly include the banana.
+28,6,0.5,False,"an apple a banana an orange and a sandwich. Make sure to clearly include the banana, orange, sandwich."
+28,7,1.0,True,"an apple a banana an orange and a sandwich. Make sure to clearly include the banana, sandwich."
+29,1,0.75,False,a person with a dog a cat and a suitcase
+29,2,0.5,False,a person with a dog a cat and a suitcase. Make sure to clearly include the cat.
+29,3,0.75,False,"a person with a dog a cat and a suitcase. Make sure to clearly include the dog, cat."
+29,4,0.5,False,a person with a dog a cat and a suitcase. Make sure to clearly include the dog.
+29,5,0.75,False,"a person with a dog a cat and a suitcase. Make sure to clearly include the dog, suitcase."
+29,6,0.75,False,a person with a dog a cat and a suitcase. Make sure to clearly include the cat.
+29,7,0.5,False,a person with a dog a cat and a suitcase. Make sure to clearly include the dog.
+29,8,1.0,True,"a person with a dog a cat and a suitcase. Make sure to clearly include the person, cat."
+30,1,0.5,False,a couch a vase a clock and a teddy bear in a living room
+30,2,1.0,True,"a couch a vase a clock and a teddy bear in a living room. Make sure to clearly include the couch, vase."

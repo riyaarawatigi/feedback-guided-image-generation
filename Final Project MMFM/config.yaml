@@ -1,0 +1,21 @@
+generation:
+  model: runwayml/stable-diffusion-v1-5
+  image_size: 512
+  steps: 50
+  guidance: 7.5
+  seed: 42
+  device: auto
+  dtype: auto
+
+detection:
+  model: yolov8l.pt
+  confidence_threshold: 0.25
+
+experiments:
+  rejection_k: 5
+  max_feedback_attempts: 9
+
+paths:
+  prompts: data/prompts.csv
+  output_dir: results
+  images_dir: generated_images
