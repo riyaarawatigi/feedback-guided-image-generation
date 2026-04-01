@@ -1,6 +1,4 @@
 
-
-````markdown
 # Object Omission Mitigation for Text-to-Image Generation
 
 Implementation of detection-guided feedback refinement for improving compositional image generation with Stable Diffusion.
@@ -21,7 +19,7 @@ Text-to-image models often fail to generate all requested objects in multi-objec
 git clone https://github.com/riyaarawatigi/feedback-guided-image-generation.git
 cd feedback-guided-image-generation
 pip install -r requirements.txt
-````
+
 
 ## Quick Start
 
