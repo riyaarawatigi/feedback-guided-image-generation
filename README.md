@@ -120,10 +120,10 @@ object-omission-mitigation/
 ## Citation
 
 ```bibtex
-@article{paul2024object,
+@article{paul2026object,
   title={Object Omission Mitigation for Compositional Image Generation via Detection-Guided Refinement},
   author={Paul, Pranjaly and Savran, Rumeysa and Arawatagi, Riya},
-  year={2024}
+  year={2026}
 }
 ```
 
